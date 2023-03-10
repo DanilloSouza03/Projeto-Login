@@ -30,12 +30,16 @@ section#login {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
 
     background-color: #ffffff;
     width: 250px;
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 15px #00000089;
+
+    transition: width .4s, height .4s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
@@ -43,7 +47,6 @@ section#login > div#imagem {
     background: #5f2c82 url(../imagens/login.jpg) no-repeat;
     background-size: cover;
     height: 200px;
-    border-radius: 20px 20px 0px 0px;
 }
 
 section#login > div#formulario {
